@@ -1,3 +1,32 @@
+# MyReads App
+---
+Bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.
+
+## Install
+---
+Open terminal, Clone project and Run it!
+```
+$ cd to/your/project-path
+$ git clone git@github.com:melindangas/myreads.git
+$ cd myreads/
+$ npm install
+$ npm start
+```
+## How it works?
+---
+The app will display three shelves containing a number of books with the following states:
+- Want to read
+- Currently reading
+- Read
+
+The users controls the state of each book, selecting between those mentioned above.
+.
+***
+#### License
+<sub>Copyright (c) 2018 Real Developer **_Melinda A._** Free MIT License</sub>
+
+---------
+
 # MyReads Project
 
 This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.

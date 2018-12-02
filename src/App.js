@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {search, get} from './BooksAPI'
+import {search, get, getAll, update} from './BooksAPI'
 import Book from './Book'
 import Shelf from './Shelf'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
@@ -26,8 +26,8 @@ class BooksApp extends React.Component {
     this.handleChangeShelf = this.handleChangeShelf.bind(this)
   }
   
-  componentDidMount() {
-    this.loadFromStorage()
+  async componentDidMount() {
+    this.setState({ books: await getAll() })
   }
 
   handleChangeShelf(book, shelf) {
@@ -50,7 +50,7 @@ class BooksApp extends React.Component {
       newList = this.state.books.concat(book)
     }
 
-    this.saveToStorage(newList)
+    update(book, shelf)
     this.setState({books: newList}) // update state with changes
   }
   

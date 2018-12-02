@@ -16,7 +16,7 @@ export default class Book extends React.Component {
         return (
             <div className="book">
                 <div className="book-top">
-                    <div className="book-cover" style={{ width: 128, height: 174, backgroundImage: 'url('+ this.props.data.imageLinks.thumbnail+')' }}></div>
+                    <div className="book-cover" style={{ width: 128, height: 174, backgroundImage: 'url(' + (this.props.data.imageLinks ? this.props.data.imageLinks.thumbnail : '') + ')' }}></div>
                     <div className="book-shelf-changer">
                         <select onChange={this.handleChange} value={this.state.selected}>
                             <option value="move" disabled>Move to...</option>
