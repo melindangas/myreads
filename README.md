@@ -1,9 +1,9 @@
 # MyReads App
----
+
 Bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.
 
 ## Install
----
+
 Open terminal, Clone project and Run it!
 ```
 $ cd to/your/project-path
@@ -13,7 +13,7 @@ $ npm install
 $ npm start
 ```
 ## How it works?
----
+
 The app will display three shelves containing a number of books with the following states:
 - Want to read
 - Currently reading
@@ -25,7 +25,7 @@ The users controls the state of each book, selecting between those mentioned abo
 #### License
 <sub>Copyright (c) 2018 Real Developer **_Melinda A._** Free MIT License</sub>
 
----------
+
 
 # MyReads Project
 
